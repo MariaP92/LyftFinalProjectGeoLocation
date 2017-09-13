@@ -1,0 +1,72 @@
+#login{
+    background-image: url("../img/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 660px;
+}
+
+
+#login button{
+    font-size: 21px;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Passion One', cursive ;
+    border-radius: 90px 90px 90px 90px;
+    border-width: 4px;
+    border-color: white;
+    width: 150px;
+    background: #db3dc0;
+    color: white;
+    margin-top: 570px;
+
+}
+
+#generateCode{
+    font-size: 21px;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Passion One', cursive ;
+    border: 0;
+    width: 150px;
+    background: #f756b4;
+    color: white;
+/*    margin-top: 350px;*/
+
+}
+#next{
+    display: none;
+    font-size: 21px;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Passion One', cursive ;
+    border: 0;
+    width: 150px;
+    background: #f756b4;
+    color: white;
+   /* margin-top: 350px;*/
+
+}
+#nextBTN{
+    display: none;
+    font-size: 21px;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Passion One', cursive ;
+    border: 0;
+    width: 150px;
+    background: #f756b4;
+    color: white;
+}
+
+#flags{
+    width: 60px;
+}
+
+#cod{
+    width: 50px;
+}
+#telC{
+    margin-top: 0;
+}
+
+#register i{
+    font-size: 25px;
+}
+

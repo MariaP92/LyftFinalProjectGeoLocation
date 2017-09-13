@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One|Raleway" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/Lyft-Logo-1.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LYFT-SINGUP</title>
+</head>
+
+<body>
+    <section id="register" class="text-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="headerRegister" class="col-md-12 col-xs-12 col-sm-12">
+                    <h1>Sign Up</h1>
+                    <p>Join now for free ride credit</p>
+                    <hr size="2px" color="#f756b4" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form id="registrationForm" class="form-horizontal">
+                        <div class="form-group">
+                            <i class="fa fa-user-circle-o col-xs-3" aria-hidden="true"></i>
+                            <div class="col-xs-4">
+                                <input type="text" id= "fName" class="form-control" name="firstName" placeholder="First name" required/>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" id= "lName" class="form-control" name="lastName" placeholder="Last name" required/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <i class="fa fa-envelope col-xs-3 " aria-hidden="true"></i>
+                            <div class="col-xs-8">
+                                <input type="text" id= "eName"class="form-control" name="email" placeholder="e-mail" required/>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <i class="fa fa-check-circle col-xs-3" aria-hidden="true"></i>
+                            <div class="col-xs-8">
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#termsModal">Agree with the terms and conditions</button>
+                                <input type="hidden" name="agree" value="no" />
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+
+
+            <!-- Terms and conditions modal -->
+            <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="Terms and conditions" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Terms and conditions</h3>
+                        </div>
+
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet, veniam numquam has te. No suas nonumes recusabo mea, est ut graeci
+                                definitiones. His ne melius vituperata scriptorem, cum paulo copiosae conclusionemque at.
+                                Facer inermis ius in, ad brute nominati referrentur vis. Dicat erant sit ex. Phaedrum imperdiet
+                                scribentur vix no, ad latine similique forensibus vel.</p>
+                            <p>Dolore populo vivendum vis eu, mei quaestio liberavisse ex. Electram necessitatibus ut vel, quo
+                                at probatus oportere, molestie conclusionemque pri cu. Brute augue tincidunt vim id, ne munere
+                                fierent rationibus mei. Ut pro volutpat praesent qualisque, an iisque scripta intellegebat
+                                eam.
+                            </p>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="agreeButton" data-dismiss="modal">Agree</button>
+                            <button type="button" class="btn btn-default" id="disagreeButton" data-dismiss="modal">Disagree</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                    <a href="map.html"><button class="btn" id="nextBTN"> NEXT</button></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>
