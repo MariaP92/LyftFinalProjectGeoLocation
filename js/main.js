@@ -22,7 +22,7 @@ let appMap = {
         let input = document.getElementById("destination");
         let autocomplete = new google.maps.places.Autocomplete(input);
         appMap.markerOrigin = appMap.createMarker(appMap.map);
-
+        appMap.datosUsuario();
         //TRACE ROUTE
         let onChangeHandler = function () {
             appMap.calculateAndDisplayRoute(directionsService, directionsDisplay);
@@ -129,13 +129,15 @@ let appMap = {
         });
 
 
-    }/*,
+    },
     datosUsuario: function () {
-        for (let i in localStorage) {
-            let code = localStorage[i];
-            let phone = localStorage.key(i);
-            //console.log(comment+"dsadas"+ name);
-            $('#modalUser').append(`<div">\
+        $("#usuario").click(function(){
+            $('#UsermodalBody').val("");
+            for (let i in localStorage) {
+                let code = localStorage[i];
+                let phone = localStorage.key(i);
+                //console.log(comment+"dsadas"+ name);
+                $('#UsermodalBody').append(`<div">\
                                     <p>\ 
                                      ${code}\
                                     </p>\
@@ -143,9 +145,10 @@ let appMap = {
                                     ${phone}\
                                    </p>\
                             </div>`);
-            $("#modalUser").modal();
-        }
-    }*/
+                $("#modalUser").modal();
+            }
+        });
+    }
 
 }
 
